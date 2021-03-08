@@ -1,5 +1,6 @@
 # for school server
 *.config
+*.cfg
 
 # Built application files
 *.apk
