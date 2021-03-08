@@ -1,3 +1,6 @@
+# for school server
+*.config
+
 # Built application files
 *.apk
 *.aar
