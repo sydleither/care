@@ -9,20 +9,20 @@ $path = explode("/",$_SERVER["PATH_INFO"]);
 $resource = $path[1];
 $controller = ucfirst($resource)."Controller";
 
-if(method_exists($controller,$method)){
-	header("Content-Type: application/json");
-	$data = json_decode(file_get_contents("php://input"));
-	$request = new ControllerRequest();
-	if($method == "get" || $method == "put" || $method == "delete" || $method == "patch"){
-		$request->id = $path[2];
-		$request->param = $path[3];
-	}
-	if($method == "post" || $method == "put" || $method == "patch"){
-		$request->data = $data;
-	}
-	$response = call_user_func(array($controller,$method), $request);
-	echo json_encode($response);
+if(method_exists($controller,$method)) {
+  header("Content-Type: application/json");
+  $data = json_decode(file_get_contents("php://input"));
+  $request = new ControllerRequest();
+  if($method == "get") {
+    $request->id = $path[2];
+    $request->param = $path[3];
+  }
+  if($method == "post") {
+    $request->data = $data;
+  }
+  $response = call_user_func(array($controller,$method), $request);
+  echo json_encode($response);
 }
-else{
-	http_response_code(405);
+else {
+  http_response_code(405);
 }

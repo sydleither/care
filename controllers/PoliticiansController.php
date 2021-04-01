@@ -26,10 +26,5 @@ class PoliticiansController{
     PoliticianModel::updatePolitician($politician);
     return new ControllerResponse($politician);
   }
-
-  static public function delete(ControllerRequest $request) : ControllerResponse{
-    PoliticianModel::deletePolitician($request->id);
-    return new ControllerResponse();
-  }
 }
 ?>
