@@ -13,11 +13,11 @@ if(method_exists($controller,$method)) {
   header("Content-Type: application/json");
   $data = json_decode(file_get_contents("php://input"));
   $request = new ControllerRequest();
-  if($method == "get") {
+  if($method == "get" || $method == "put" || $method == "delete" || $method == "patch") {
     $request->id = $path[2];
     $request->param = $path[3];
   }
-  if($method == "post") {
+  if($method == "post" || $method == "put" || $method == "patch") {
     $request->data = $data;
   }
   $response = call_user_func(array($controller,$method), $request);
