@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/politicanListFragment">
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.care.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_politicanListFragment"
+            app:destination="@id/politicanListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/politicanFragment"
+        android:name="com.care.PoliticanFragment"
+        android:label="fragment_politican"
+        tools:layout="@layout/fragment_politican" />
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.care.HelpFragment"
+        android:label="fragment_help"
+        tools:layout="@layout/fragment_help" />
+    <fragment
+        android:id="@+id/politicanListFragment"
+        android:name="com.care.PoliticianListFragment"
+        android:label="fragment_politican_list_list"
+        tools:layout="@layout/fragment_politican_list_list" >
+        <action
+            android:id="@+id/action_politicanListFragment_to_politicanFragment"
+            app:destination="@id/politicanFragment" />
+        <action
+            android:id="@+id/action_politicanListFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_politicanListFragment_to_helpFragment"
+            app:destination="@id/helpFragment" />
+    </fragment>
+</navigation>
