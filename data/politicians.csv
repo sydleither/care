@@ -1,0 +1,535 @@
+1,Sherrod Brown,sen,OH,Democrat,SenSherrodBrown
+2,Maria Cantwell,sen,WA,Democrat,SenatorCantwell
+3,Benjamin L. Cardin,sen,MD,Democrat,SenatorCardin
+4,Thomas R. Carper,sen,DE,Democrat,SenatorCarper
+5,"Robert P. Casey, Jr.",sen,PA,Democrat,SenBobCasey
+6,Dianne Feinstein,sen,CA,Democrat,SenFeinstein
+7,Amy Klobuchar,sen,MN,Democrat,SenAmyKlobuchar
+8,Robert Menendez,sen,NJ,Democrat,SenatorMenendez
+9,Bernard Sanders,sen,VT,Independent,SenSanders
+10,Debbie Stabenow,sen,MI,Democrat,SenStabenow
+11,Jon Tester,sen,MT,Democrat,SenatorTester
+12,Sheldon Whitehouse,sen,RI,Democrat,SenWhitehouse
+13,John Barrasso,sen,WY,Republican,SenJohnBarrasso
+14,Roger F. Wicker,sen,MS,Republican,SenatorWicker
+15,Susan M. Collins,sen,ME,Republican,SenatorCollins
+16,John Cornyn,sen,TX,Republican,JohnCornyn
+17,Richard J. Durbin,sen,IL,Democrat,SenatorDurbin
+18,Lindsey Graham,sen,SC,Republican,GrahamBlog
+19,James M. Inhofe,sen,OK,Republican,InhofePress
+20,Mitch McConnell,sen,KY,Republican,McConnellPress
+21,Jeff Merkley,sen,OR,Democrat,SenJeffMerkley
+22,Jack Reed,sen,RI,Democrat,SenJackReed
+23,James E. Risch,sen,ID,Republican,SenatorRisch
+24,Jeanne Shaheen,sen,NH,Democrat,SenatorShaheen
+25,Mark R. Warner,sen,VA,Democrat,MarkWarner
+26,Kirsten E. Gillibrand,sen,NY,Democrat,GillibrandNY
+27,Christopher A. Coons,sen,DE,Democrat,ChrisCoons
+28,"Joe Manchin, III",sen,WV,Democrat,Sen_JoeManchin
+29,Robert B. Aderholt,rep,AL,Republican,Robert_Aderholt
+30,Tammy Baldwin,sen,WI,Democrat,SenatorBaldwin
+31,Karen Bass,rep,CA,Democrat,RepKarenBass
+32,Michael F. Bennet,sen,CO,Democrat,SenatorBennet
+33,Gus M. Bilirakis,rep,FL,Republican,RepGusBilirakis
+34,"Sanford D. Bishop, Jr.",rep,GA,Democrat,SanfordBishop
+35,Marsha Blackburn,sen,TN,Republican,MarshaBlackburn
+36,Earl Blumenauer,rep,OR,Democrat,BlumenauerMedia
+37,Richard Blumenthal,sen,CT,Democrat,SenBlumenthal
+38,Roy Blunt,sen,MO,Republican,RoyBlunt
+39,John Boozman,sen,AR,Republican,JohnBoozman
+40,Kevin Brady,rep,TX,Republican,RepKevinBrady
+41,Mo Brooks,rep,AL,Republican,RepMoBrooks
+42,Vern Buchanan,rep,FL,Republican,VernBuchanan
+43,Larry Bucshon,rep,IN,Republican,RepLarryBucshon
+44,Michael C. Burgess,rep,TX,Republican,MichaelCBurgess
+45,Richard Burr,sen,NC,Republican,SenatorBurr
+46,G. K. Butterfield,rep,NC,Democrat,GKButterfield
+47,Ken Calvert,rep,CA,Republican,KenCalvert
+48,Shelley Moore Capito,sen,WV,Republican,SenCapito
+49,André Carson,rep,IN,Democrat,RepAndreCarson
+50,John R. Carter,rep,TX,Republican,JudgeCarter
+51,Bill Cassidy,sen,LA,Republican,SenBillCassidy
+52,Kathy Castor,rep,FL,Democrat,USRepKCastor
+53,Steve Chabot,rep,OH,Republican,RepSteveChabot
+54,Judy Chu,rep,CA,Democrat,RepJudyChu
+55,David N. Cicilline,rep,RI,Democrat,RepCicilline
+56,Yvette D. Clarke,rep,NY,Democrat,RepYvetteClarke
+57,Emanuel Cleaver,rep,MO,Democrat,RepCleaver
+58,James E. Clyburn,rep,SC,Democrat,WhipClyburn
+59,Steve Cohen,rep,TN,Democrat,RepCohen
+60,Tom Cole,rep,OK,Republican,TomColeOK04
+61,Gerald E. Connolly,rep,VA,Democrat,GerryConnolly
+62,Jim Cooper,rep,TN,Democrat,RepJimCooper
+63,Jim Costa,rep,CA,Democrat,RepJimCosta
+64,Joe Courtney,rep,CT,Democrat,RepJoeCourtney
+65,Mike Crapo,sen,ID,Republican,MikeCrapo
+66,Eric A. Rick Crawford,rep,AR,Republican,RepRickCrawford
+67,Henry Cuellar,rep,TX,Democrat,RepCuellar
+68,Danny K. Davis,rep,IL,Democrat,RepDannyDavis
+69,Peter A. DeFazio,rep,OR,Democrat,RepPeterDeFazio
+70,Diana DeGette,rep,CO,Democrat,RepDianaDeGette
+71,Rosa L. DeLauro,rep,CT,Democrat,RosaDeLauro
+72,Scott DesJarlais,rep,TN,Republican,DesJarlaisTN04
+73,Theodore E. Deutch,rep,FL,Democrat,RepTedDeutch
+74,Mario Diaz-Balart,rep,FL,Republican,MarioDB
+75,Lloyd Doggett,rep,TX,Democrat,RepLloydDoggett
+76,Michael F. Doyle,rep,PA,Democrat,USRepMikeDoyle
+77,Jeff Duncan,rep,SC,Republican,RepJeffDuncan
+78,Anna G. Eshoo,rep,CA,Democrat,RepAnnaEshoo
+79,Charles J. Chuck Fleischmann,rep,TN,Republican,RepChuck
+80,Jeff Fortenberry,rep,NE,Republican,JeffFortenberry
+81,Virginia Foxx,rep,NC,Republican,VirginiaFoxx
+82,John Garamendi,rep,CA,Democrat,RepGaramendi
+83,Bob Gibbs,rep,OH,Republican,RepBobGibbs
+84,Louie Gohmert,rep,TX,Republican,RepLouieGohmert
+85,Paul A. Gosar,rep,AZ,Republican,RepGosar
+86,Kay Granger,rep,TX,Republican,RepKayGranger
+87,Chuck Grassley,sen,IA,Republican,ChuckGrassley
+88,Sam Graves,rep,MO,Republican,RepSamGraves
+89,Al Green,rep,TX,Democrat,RepAlGreen
+90,H. Morgan Griffith,rep,VA,Republican,RepMGriffith
+91,Raúl M. Grijalva,rep,AZ,Democrat,RepraulGrijalva
+92,Brett Guthrie,rep,KY,Republican,RepGuthrie
+93,Andy Harris,rep,MD,Republican,RepAndyHarrisMD
+94,Vicky Hartzler,rep,MO,Republican,RepHartzler
+95,Martin Heinrich,sen,NM,Democrat,MartinHeinrich
+96,Jaime Herrera Beutler,rep,WA,Republican,HerreraBeutler
+97,Brian Higgins,rep,NY,Democrat,RepBrianHiggins
+98,James A. Himes,rep,CT,Democrat,JAHimes
+99,Mazie K. Hirono,sen,HI,Democrat,MazieHirono
+100,John Hoeven,sen,ND,Republican,SenJohnHoeven
+101,Steny H. Hoyer,rep,MD,Democrat,LeaderHoyer
+102,Bill Huizenga,rep,MI,Republican,RepHuizenga
+103,Sheila Jackson Lee,rep,TX,Democrat,JacksonLeeTX18
+104,Bill Johnson,rep,OH,Republican,RepBillJohnson
+105,Eddie Bernice Johnson,rep,TX,Democrat,RepEBJ
+106,"Henry C. Hank Johnson, Jr.",rep,GA,Democrat,RepHankJohnson
+107,Ron Johnson,sen,WI,Republican,SenRonJohnson
+108,Jim Jordan,rep,OH,Republican,Jim_Jordan
+109,Marcy Kaptur,rep,OH,Democrat,RepMarcyKaptur
+110,William R. Keating,rep,MA,Democrat,USRepKeating
+111,Mike Kelly,rep,PA,Republican,MikeKellyPA
+112,Ron Kind,rep,WI,Democrat,RepRonKind
+113,Adam Kinzinger,rep,IL,Republican,RepKinzinger
+114,Doug Lamborn,rep,CO,Republican,RepDLamborn
+115,James R. Langevin,rep,RI,Democrat,JimLangevin
+116,James Lankford,sen,OK,Republican,SenatorLankford
+117,Rick Larsen,rep,WA,Democrat,RepRickLarsen
+118,John B. Larson,rep,CT,Democrat,RepJohnLarson
+119,Robert E. Latta,rep,OH,Republican,BobLatta
+120,Patrick J. Leahy,sen,VT,Democrat,SenatorLeahy
+121,Barbara Lee,rep,CA,Democrat,RepBarbaraLee
+122,Mike Lee,sen,UT,Republican,SenMikeLee
+123,Zoe Lofgren,rep,CA,Democrat,RepZoeLofgren
+124,Billy Long,rep,MO,Republican,USRepLong
+125,Frank D. Lucas,rep,OK,Republican,RepFrankLucas
+126,Blaine Luetkemeyer,rep,MO,Republican,RepBlaine
+127,Ben Ray Luján,sen,NM,Democrat,SenatorLujan
+128,Stephen F. Lynch,rep,MA,Democrat,RepStephenLynch
+129,Carolyn B. Maloney,rep,NY,Democrat,RepMaloney
+130,Edward J. Markey,sen,MA,Democrat,SenMarkey
+131,Doris O. Matsui,rep,CA,Democrat,DorisMatsui
+132,Kevin McCarthy,rep,CA,Republican,GOPLeader
+133,Michael T. McCaul,rep,TX,Republican,RepMcCaul
+134,Tom McClintock,rep,CA,Republican,RepMcClintock
+135,Betty McCollum,rep,MN,Democrat,BettyMcCollum04
+136,James P. McGovern,rep,MA,Democrat,RepMcGovern
+137,Patrick T. McHenry,rep,NC,Republican,PatrickMcHenry
+138,David B. McKinley,rep,WV,Republican,RepMcKinley
+139,Cathy McMorris Rodgers,rep,WA,Republican,CathyMcMorris
+140,Jerry McNerney,rep,CA,Democrat,RepMcNerney
+141,Gregory W. Meeks,rep,NY,Democrat,RepGregoryMeeks
+142,Gwen Moore,rep,WI,Democrat,RepGwenMoore
+143,Jerry Moran,sen,KS,Republican,JerryMoran
+144,Lisa Murkowski,sen,AK,Republican,LisaMurkowski
+145,Christopher Murphy,sen,CT,Democrat,senmurphyoffice
+146,Patty Murray,sen,WA,Democrat,PattyMurray
+147,Jerrold Nadler,rep,NY,Democrat,RepJerryNadler
+148,Grace F. Napolitano,rep,CA,Democrat,GraceNapolitano
+149,Richard E. Neal,rep,MA,Democrat,RepRichardNeal
+150,Eleanor Holmes Norton,rep,DC,Democrat,EleanorNorton
+151,Devin Nunes,rep,CA,Republican,RepDevinNunes
+152,Steven M. Palazzo,rep,MS,Republican,CongPalazzo
+153,"Frank Pallone, Jr.",rep,NJ,Democrat,FrankPallone
+154,"Bill Pascrell, Jr.",rep,NJ,Democrat,BillPascrell
+155,Rand Paul,sen,KY,Republican,RandPaul
+156,Nancy Pelosi,rep,CA,Democrat,SpeakerPelosi
+157,Ed Perlmutter,rep,CO,Democrat,RepPerlmutter
+158,Gary C. Peters,sen,MI,Democrat,SenGaryPeters
+159,Chellie Pingree,rep,ME,Democrat,ChelliePingree
+160,Rob Portman,sen,OH,Republican,SenRobPortman
+161,Bill Posey,rep,FL,Republican,CongBillPosey
+162,David E. Price,rep,NC,Democrat,RepDavidEPrice
+163,Mike Quigley,rep,IL,Democrat,RepMikeQuigley
+164,Tom Reed,rep,NY,Republican,RepTomReed
+165,Harold Rogers,rep,KY,Republican,RepHalRogers
+166,Mike Rogers,rep,AL,Republican,RepMikeRogersAL
+167,Lucille Roybal-Allard,rep,CA,Democrat,RepRoybalAllard
+168,Marco Rubio,sen,FL,Republican,SenRubioPress
+169,C. A. Dutch Ruppersberger,rep,MD,Democrat,Call_Me_Dutch
+170,Bobby L. Rush,rep,IL,Democrat,RepBobbyRush
+171,Tim Ryan,rep,OH,Democrat,RepTimRyan
+172,Gregorio Kilili Camacho Sablan,rep,MP,Democrat,Kilili_Sablan
+173,John P. Sarbanes,rep,MD,Democrat,RepSarbanes
+174,Steve Scalise,rep,LA,Republican,SteveScalise
+175,Janice D. Schakowsky,rep,IL,Democrat,JanSchakowsky
+176,Adam B. Schiff,rep,CA,Democrat,RepAdamSchiff
+177,Kurt Schrader,rep,OR,Democrat,RepSchrader
+178,Charles E. Schumer,sen,NY,Democrat,SenSchumer
+179,David Schweikert,rep,AZ,Republican,RepDavid
+180,Austin Scott,rep,GA,Republican,AustinScottGA08
+181,David Scott,rep,GA,Democrat,RepDavidScott
+182,Robert C. Bobby Scott,rep,VA,Democrat,BobbyScott
+183,Tim Scott,sen,SC,Republican,SenatorTimScott
+184,Terri Sewell,rep,AL,Democrat,RepTerriSewell
+185,Richard C. Shelby,sen,AL,Republican,SenShelby
+186,Brad Sherman,rep,CA,Democrat,BradSherman
+187,Michael K. Simpson,rep,ID,Republican,CongMikeSimpson
+188,Albio Sires,rep,NJ,Democrat,RepSires
+189,Adam Smith,rep,WA,Democrat,RepAdamSmith
+190,Adrian Smith,rep,NE,Republican,RepAdrianSmith
+191,Christopher H. Smith,rep,NJ,Republican,RepChrisSmith
+192,Jackie Speier,rep,CA,Democrat,RepSpeier
+193,Steve Stivers,rep,OH,Republican,RepSteveStivers
+194,Linda T. Sánchez,rep,CA,Democrat,RepLindaSanchez
+195,Bennie G. Thompson,rep,MS,Democrat,BennieGThompson
+196,Mike Thompson,rep,CA,Democrat,RepThompson
+197,Glenn Thompson,rep,PA,Republican,CongressmanGT
+198,John Thune,sen,SD,Republican,SenJohnThune
+199,Paul Tonko,rep,NY,Democrat,RepPaulTonko
+200,Patrick J. Toomey,sen,PA,Republican,SenToomey
+201,Michael R. Turner,rep,OH,Republican,RepMikeTurner
+202,Fred Upton,rep,MI,Republican,RepFredUpton
+203,Chris Van Hollen,sen,MD,Democrat,ChrisVanHollen
+204,Nydia M. Velázquez,rep,NY,Democrat,NydiaVelazquez
+205,Tim Walberg,rep,MI,Republican,RepWalberg
+206,Debbie Wasserman Schultz,rep,FL,Democrat,RepDWStweets
+207,Maxine Waters,rep,CA,Democrat,RepMaxineWaters
+208,Daniel Webster,rep,FL,Republican,RepWebster
+209,Peter Welch,rep,VT,Democrat,PeterWelch
+210,Joe Wilson,rep,SC,Republican,RepJoeWilson
+211,Frederica S. Wilson,rep,FL,Democrat,RepWilson
+212,Robert J. Wittman,rep,VA,Republican,RobWittman
+213,Steve Womack,rep,AR,Republican,Rep_SteveWomack
+214,Ron Wyden,sen,OR,Democrat,RonWyden
+215,John A. Yarmuth,rep,KY,Democrat,RepJohnYarmuth
+216,Don Young,rep,AK,Republican,RepDonYoung
+217,Todd Young,sen,IN,Republican,SenToddYoung
+218,Mark E. Amodei,rep,NV,Republican,MarkAmodeiNV2
+219,Suzanne Bonamici,rep,OR,Democrat,RepBonamici
+220,Suzan K. DelBene,rep,WA,Democrat,RepDelBene
+221,Thomas Massie,rep,KY,Republican,RepThomasMassie
+222,"Donald M. Payne, Jr.",rep,NJ,Democrat,RepDonaldPayne
+223,Brian Schatz,sen,HI,Democrat,SenBrianSchatz
+224,Bill Foster,rep,IL,Democrat,RepBillFoster
+225,Dina Titus,rep,NV,Democrat,RepDinaTitus
+226,Tom Cotton,sen,AR,Republican,SenTomCotton
+227,Kyrsten Sinema,sen,AZ,Democrat,SenatorSinema
+228,Doug LaMalfa,rep,CA,Republican,RepLaMalfa
+229,Jared Huffman,rep,CA,Democrat,RepHuffman
+230,Ami Bera,rep,CA,Democrat,RepBera
+231,Eric Swalwell,rep,CA,Democrat,RepSwalwell
+232,Julia Brownley,rep,CA,Democrat,RepBrownley
+233,Tony Cárdenas,rep,CA,Democrat,RepCardenas
+234,Raul Ruiz,rep,CA,Democrat,RepRaulRuizMD
+235,Mark Takano,rep,CA,Democrat,RepMarkTakano
+236,Alan S. Lowenthal,rep,CA,Democrat,RepLowenthal
+237,Juan Vargas,rep,CA,Democrat,RepJuanVargas
+238,Scott H. Peters,rep,CA,Democrat,RepScottPeters
+239,Lois Frankel,rep,FL,Democrat,RepLoisFrankel
+240,Tammy Duckworth,sen,IL,Democrat,SenDuckworth
+241,Rodney Davis,rep,IL,Republican,RodneyDavis
+242,Cheri Bustos,rep,IL,Democrat,RepCheri
+243,Jackie Walorski,rep,IN,Republican,RepWalorski
+244,Andy Barr,rep,KY,Republican,RepAndyBarr
+245,Elizabeth Warren,sen,MA,Democrat,SenWarren
+246,"Angus S. King, Jr.",sen,ME,Independent,SenAngusKing
+247,Daniel T. Kildee,rep,MI,Democrat,RepDanKildee
+248,Ann Wagner,rep,MO,Republican,RepAnnWagner
+249,Steve Daines,sen,MT,Republican,SteveDaines
+250,Richard Hudson,rep,NC,Republican,RepRichHudson
+251,Kevin Cramer,sen,ND,Republican,SenKevinCramer
+252,Deb Fischer,sen,NE,Republican,SenatorFischer
+253,Ann Kuster,rep,NH,Democrat,RepAnnieKuster
+254,Grace Meng,rep,NY,Democrat,RepGraceMeng
+255,Hakeem S. Jeffries,rep,NY,Democrat,RepJeffries
+256,Sean Patrick Maloney,rep,NY,Democrat,RepSeanMaloney
+257,Brad R. Wenstrup,rep,OH,Republican,RepBradWenstrup
+258,Joyce Beatty,rep,OH,Democrat,RepBeatty
+259,David P. Joyce,rep,OH,Republican,RepDaveJoyce
+260,Markwayne Mullin,rep,OK,Republican,RepMullin
+261,Scott Perry,rep,PA,Republican,RepScottPerry
+262,Matt Cartwright,rep,PA,Democrat,RepCartwright
+263,Tom Rice,rep,SC,Republican,RepTomRice
+264,Ted Cruz,sen,TX,Republican,SenTedCruz
+265,"Randy K. Weber, Sr.",rep,TX,Republican,TXRandy14
+266,Joaquin Castro,rep,TX,Democrat,JoaquinCastrotx
+267,Roger Williams,rep,TX,Republican,RepRWilliams
+268,Marc A. Veasey,rep,TX,Democrat,RepVeasey
+269,Filemon Vela,rep,TX,Democrat,RepFilemonVela
+270,Chris Stewart,rep,UT,Republican,RepChrisStewart
+271,Tim Kaine,sen,VA,Democrat,N/A
+272,Derek Kilmer,rep,WA,Democrat,RepDerekKilmer
+273,Mark Pocan,rep,WI,Democrat,RepMarkPocan
+274,Robin L. Kelly,rep,IL,Democrat,RepRobinKelly
+275,Jason Smith,rep,MO,Republican,RepJasonSmith
+276,Cory A. Booker,sen,NJ,Democrat,SenBooker
+277,Katherine M. Clark,rep,MA,Democrat,RepKClark
+278,Donald Norcross,rep,NJ,Democrat,DonaldNorcross
+279,Alma S. Adams,rep,NC,Democrat,RepAdams
+280,Gary J. Palmer,rep,AL,Republican,USRepGaryPalmer
+281,J. Hill,rep,AR,Republican,RepFrenchHill
+282,Bruce Westerman,rep,AR,Republican,RepWesterman
+283,Ruben Gallego,rep,AZ,Democrat,RepRubenGallego
+284,Mark DeSaulnier,rep,CA,Democrat,RepDeSaulnier
+285,Pete Aguilar,rep,CA,Democrat,reppeteaguilar
+286,Ted Lieu,rep,CA,Democrat,RepTedLieu
+287,Norma J. Torres,rep,CA,Democrat,NormaJTorres
+288,Ken Buck,rep,CO,Republican,RepKenBuck
+289,Earl L. Buddy Carter,rep,GA,Republican,RepBuddyCarter
+290,Jody B. Hice,rep,GA,Republican,congressmanhice
+291,Barry Loudermilk,rep,GA,Republican,RepLoudermilk
+292,Rick W. Allen,rep,GA,Republican,reprickallen
+293,Mike Bost,rep,IL,Republican,RepBost
+294,Garret Graves,rep,LA,Republican,RepGarretGraves
+295,Seth Moulton,rep,MA,Democrat,teammoulton
+296,John R. Moolenaar,rep,MI,Republican,RepMoolenaar
+297,Debbie Dingell,rep,MI,Democrat,RepDebDingell
+298,Brenda L. Lawrence,rep,MI,Democrat,RepLawrence
+299,Tom Emmer,rep,MN,Republican,RepTomEmmer
+300,David Rouzer,rep,NC,Republican,RepDavidRouzer
+301,Bonnie Watson Coleman,rep,NJ,Democrat,RepBonnie
+302,Lee M. Zeldin,rep,NY,Republican,RepLeeZeldin
+303,Kathleen M. Rice,rep,NY,Democrat,RepKathleenRice
+304,Elise M. Stefanik,rep,NY,Republican,RepStefanik
+305,John Katko,rep,NY,Republican,RepJohnKatko
+306,Brendan F. Boyle,rep,PA,Democrat,CongBoyle
+307,Brian Babin,rep,TX,Republican,RepBrianBabin
+308,"Donald S. Beyer, Jr.",rep,VA,Democrat,RepDonBeyer
+309,Stacey E. Plaskett,rep,VI,Democrat,staceyplaskett
+310,Dan Newhouse,rep,WA,Republican,RepNewhouse
+311,Glenn Grothman,rep,WI,Republican,RepGrothman
+312,Alexander Mooney,rep,WV,Republican,RepAlexMooney
+313,Aumua Amata Coleman Radewagen,rep,AS,Republican,RepAmata
+314,Dan Sullivan,sen,AK,Republican,SenDanSullivan
+315,Joni Ernst,sen,IA,Republican,SenJoniErnst
+316,Thom Tillis,sen,NC,Republican,senthomtillis
+317,Mike Rounds,sen,SD,Republican,SenatorRounds
+318,Ben Sasse,sen,NE,Republican,SenSasse
+319,Trent Kelly,rep,MS,Republican,reptrentkelly
+320,Darin LaHood,rep,IL,Republican,RepLaHood
+321,Warren Davidson,rep,OH,Republican,WarrenDavidson
+322,James Comer,rep,KY,Republican,RepJamesComer
+323,Dwight Evans,rep,PA,Democrat,RepDwightEvans
+324,John Kennedy,sen,LA,Republican,SenJohnKennedy
+325,Margaret Wood Hassan,sen,NH,Democrat,Senatorhassan
+326,Catherine Cortez Masto,sen,NV,Democrat,sencortezmasto
+327,Bradley Scott Schneider,rep,IL,Democrat,repschneider
+328,Tom O’Halleran,rep,AZ,Democrat,repohalleran
+329,Andy Biggs,rep,AZ,Republican,RepAndyBiggsAZ
+330,Ro Khanna,rep,CA,Democrat,RepRoKhanna
+331,Jimmy Panetta,rep,CA,Democrat,RepJimmyPanetta
+332,Salud O. Carbajal,rep,CA,Democrat,RepCarbajal
+333,Nanette Diaz Barragán,rep,CA,Democrat,RepBarragan
+334,J. Luis Correa,rep,CA,Democrat,reploucorrea
+335,Lisa Blunt Rochester,rep,DE,Democrat,RepLBR
+336,Matt Gaetz,rep,FL,Republican,RepMattGaetz
+337,Neal P. Dunn,rep,FL,Republican,drnealdunnfl2
+338,John H. Rutherford,rep,FL,Republican,RepRutherfordFL
+339,"Al Lawson, Jr.",rep,FL,Democrat,RepAlLawsonJr
+340,Stephanie N. Murphy,rep,FL,Democrat,RepStephMurphy
+341,Darren Soto,rep,FL,Democrat,RepDarrenSoto
+342,Val Butler Demings,rep,FL,Democrat,RepValDemings
+343,Charlie Crist,rep,FL,Democrat,repcharliecrist
+344,Brian J. Mast,rep,FL,Republican,repbrianmast
+345,A. Drew Ferguson IV,rep,GA,Republican,RepDrewFerguson
+346,Raja Krishnamoorthi,rep,IL,Democrat,congressmanraja
+347,Jim Banks,rep,IN,Republican,RepJimBanks
+348,Trey Hollingsworth,rep,IN,Republican,reptrey
+349,Roger Marshall,sen,KS,Republican,SenatorMarshall
+350,Clay Higgins,rep,LA,Republican,RepClayHiggins
+351,Mike Johnson,rep,LA,Republican,RepMikeJohnson
+352,Anthony Brown,rep,MD,Democrat,RepAnthonyBrown
+353,Jamie Raskin,rep,MD,Democrat,repraskin
+354,Jack Bergman,rep,MI,Republican,RepJackBergman
+355,Ted Budd,rep,NC,Republican,RepTedBudd
+356,Don Bacon,rep,NE,Republican,repdonbacon
+357,Josh Gottheimer,rep,NJ,Democrat,RepJoshG
+358,Jacky Rosen,sen,NV,Democrat,SenJackyRosen
+359,Thomas R. Suozzi,rep,NY,Democrat,RepTomSuozzi
+360,Adriano Espaillat,rep,NY,Democrat,RepEspaillat
+361,Brian K. Fitzpatrick,rep,PA,Republican,repbrianfitz
+362,Lloyd Smucker,rep,PA,Republican,RepSmucker
+363,Jenniffer González-Colón,rep,PR,Republican,repjenniffer
+364,David Kustoff,rep,TN,Republican,repdavidkustoff
+365,Vicente Gonzalez,rep,TX,Democrat,RepGonzalez
+366,Jodey C. Arrington,rep,TX,Republican,RepArrington
+367,A. Donald McEachin,rep,VA,Democrat,RepMcEachin
+368,Pramila Jayapal,rep,WA,Democrat,RepJayapal
+369,Mike Gallagher,rep,WI,Republican,RepGallagher
+370,Liz Cheney,rep,WY,Republican,RepLizCheney
+371,Ron Estes,rep,KS,Republican,RepRonEstes
+372,Ralph Norman,rep,SC,Republican,RepRalphNorman
+373,Jimmy Gomez,rep,CA,Democrat,RepJimmyGomez
+374,John R. Curtis,rep,UT,Republican,RepJohnCurtis
+375,Tina Smith,sen,MN,Democrat,SenTinaSmith
+376,Cindy Hyde-Smith,sen,MS,Republican,SenHydeSmith
+377,Conor Lamb,rep,PA,Democrat,RepConorLamb
+378,Debbie Lesko,rep,AZ,Republican,RepDLesko
+379,Michael Cloud,rep,TX,Republican,RepCloudTX
+380,Troy Balderson,rep,OH,Republican,RepBalderson
+381,Kevin Hern,rep,OK,Republican,repkevinhern
+382,Joseph D. Morelle,rep,NY,Democrat,RepJoeMorelle
+383,Mary Gay Scanlon,rep,PA,Democrat,RepMGS
+384,Susan Wild,rep,PA,Democrat,RepSusanWild
+385,Ed Case,rep,HI,Democrat,RepEdCase
+386,Steven Horsford,rep,NV,Democrat,RepHorsford
+387,Ann Kirkpatrick,rep,AZ,Democrat,RepKirkpatrick
+388,Greg Stanton,rep,AZ,Democrat,RepGregStanton
+389,Josh Harder,rep,CA,Democrat,RepJoshHarder
+390,Katie Porter,rep,CA,Democrat,RepKatiePorter
+391,Mike Levin,rep,CA,Democrat,RepMikeLevin
+392,Joe Neguse,rep,CO,Democrat,RepJoeNeguse
+393,Jason Crow,rep,CO,Democrat,RepJasonCrow
+394,Jahana Hayes,rep,CT,Democrat,RepJahanaHayes
+395,Michael Waltz,rep,FL,Republican,RepMichaelWaltz
+396,W. Gregory Steube,rep,FL,Republican,RepGregSteube
+397,Lucy McBath,rep,GA,Democrat,replucymcbath
+398,Michael F. Q. San Nicolas,rep,GU,Democrat,GuamCongressman
+399,Cynthia Axne,rep,IA,Democrat,RepCindyAxne
+400,Russ Fulcher,rep,ID,Republican,RepRussFulcher
+401,Jesús G. Chuy García,rep,IL,Democrat,RepChuyGarcia
+402,Sean Casten,rep,IL,Democrat,RepCasten
+403,Lauren Underwood,rep,IL,Democrat,RepUnderwood
+404,James R. Baird,rep,IN,Republican,RepJimBaird
+405,Greg Pence,rep,IN,Republican,RepGregPence
+406,Sharice Davids,rep,KS,Democrat,RepDavids
+407,Lori Trahan,rep,MA,Democrat,RepLoriTrahan
+408,Ayanna Pressley,rep,MA,Democrat,RepPressley
+409,David J. Trone,rep,MD,Democrat,repdavidtrone
+410,Elissa Slotkin,rep,MI,Democrat,RepSlotkin
+411,Andy Levin,rep,MI,Democrat,RepAndyLevin
+412,Haley M. Stevens,rep,MI,Democrat,RepHaleyStevens
+413,Rashida Tlaib,rep,MI,Democrat,RepRashida
+414,Jim Hagedorn,rep,MN,Republican,RepHagedorn
+415,Angie Craig,rep,MN,Democrat,RepAngieCraig
+416,Dean Phillips,rep,MN,Democrat,RepDeanPhillips
+417,Ilhan Omar,rep,MN,Democrat,Ilhan
+418,Pete Stauber,rep,MN,Republican,RepPeteStauber
+419,Michael Guest,rep,MS,Republican,RepMichaelGuest
+420,Kelly Armstrong,rep,ND,Republican,RepArmstrongND
+421,Chris Pappas,rep,NH,Democrat,RepChrisPappas
+422,Jefferson Van Drew,rep,NJ,Republican,CongressmanJVD
+423,Andy Kim,rep,NJ,Democrat,RepAndyKimNJ
+424,Tom Malinowski,rep,NJ,Democrat,RepMalinowski
+425,Mikie Sherrill,rep,NJ,Democrat,RepSherrill
+426,Susie Lee,rep,NV,Democrat,RepSusieLee
+427,Alexandria Ocasio-Cortez,rep,NY,Democrat,RepAOC
+428,Antonio Delgado,rep,NY,Democrat,repdelgado
+429,Anthony Gonzalez,rep,OH,Republican,RepAGonzalez
+430,Madeleine Dean,rep,PA,Democrat,RepDean
+431,Chrissy Houlahan,rep,PA,Democrat,RepHoulahan
+432,Daniel Meuser,rep,PA,Republican,RepMeuser
+433,John Joyce,rep,PA,Republican,RepJohnJoyce
+434,Guy Reschenthaler,rep,PA,Republican,GReschenthaler
+435,William R. Timmons IV,rep,SC,Republican,RepTimmons
+436,Dusty Johnson,rep,SD,Republican,RepDustyJohnson
+437,Tim Burchett,rep,TN,Republican,RepTimBurchett
+438,John Rose,rep,TN,Republican,RepJohnRose
+439,Mark E. Green,rep,TN,Republican,RepMarkGreen
+440,Dan Crenshaw,rep,TX,Republican,RepDanCrenshaw
+441,Van Taylor,rep,TX,Republican,RepVanTaylor
+442,Lance Gooden,rep,TX,Republican,
+443,Lizzie Fletcher,rep,TX,Democrat,RepFletcher
+444,Veronica Escobar,rep,TX,Democrat,RepEscobar
+445,Chip Roy,rep,TX,Republican,RepChipRoy
+446,Sylvia R. Garcia,rep,TX,Democrat,RepSylviaGarcia
+447,Colin Z. Allred,rep,TX,Democrat,RepColinAllred
+448,Elaine G. Luria,rep,VA,Democrat,RepElaineLuria
+449,Ben Cline,rep,VA,Republican,RepBenCline
+450,Abigail Davis Spanberger,rep,VA,Democrat,RepSpanberger
+451,Jennifer Wexton,rep,VA,Democrat,RepWexton
+452,Kim Schrier,rep,WA,Democrat,RepKimSchrier
+453,Bryan Steil,rep,WI,Republican,RepBryanSteil
+454,Carol D. Miller,rep,WV,Republican,RepCarolMiller
+455,Rick Scott,sen,FL,Republican,SenRickScott
+456,Mike Braun,sen,IN,Republican,SenatorBraun
+457,Josh Hawley,sen,MO,Republican,SenHawleyPress
+458,Mitt Romney,sen,UT,Republican,SenatorRomney
+459,Jared F. Golden,rep,ME,Democrat,repgolden
+460,Fred Keller,rep,PA,Republican,RepFredKeller
+461,Dan Bishop,rep,NC,Republican,RepDanBishop
+462,Gregory F. Murphy,rep,NC,Republican,RepGregMurphy
+463,Kweisi Mfume,rep,MD,Democrat,RepKweisiMfume
+464,Thomas P. Tiffany,rep,WI,Republican,
+465,Mike Garcia,rep,CA,Republican,repmikegarcia
+466,Chris Jacobs,rep,NY,Republican,
+467,Mark Kelly,sen,AZ,Democrat,SenMarkKelly
+468,Cynthia M. Lummis,sen,WY,Republican,SenLummis
+469,Darrell Issa,rep,CA,Republican,
+470,Pete Sessions,rep,TX,Republican,
+471,David G. Valadao,rep,CA,Republican,
+472,Tommy Tuberville,sen,AL,Republican,SenTuberville
+473,John W. Hickenlooper,sen,CO,Democrat,
+474,Bill Hagerty,sen,TN,Republican,SenatorHagerty
+475,Jerry L. Carl,rep,AL,Republican,RepJerryCarl
+476,Barry Moore,rep,AL,Republican,RepBarryMoore
+477,Jay Obernolte,rep,CA,Republican,JayObernolte
+478,Young Kim,rep,CA,Republican,RepYoungKim
+479,Michelle Steel,rep,CA,Republican,RepSteel
+480,Sara Jacobs,rep,CA,Democrat,RepSaraJacobs
+481,Lauren Boebert,rep,CO,Republican,RepBoebert
+482,Kat Cammack,rep,FL,Republican,RepKatCammack
+483,C. Scott Franklin,rep,FL,Republican,RepFranklin
+484,Byron Donalds,rep,FL,Republican,
+485,Carlos A. Gimenez,rep,FL,Republican,RepCarlos
+486,Maria Elvira Salazar,rep,FL,Republican,RepMariaSalazar
+487,Nikema Williams,rep,GA,Democrat,RepNikema
+488,Carolyn Bourdeaux,rep,GA,Democrat,RepBourdeaux
+489,Andrew S. Clyde,rep,GA,Republican,
+490,Marjorie Taylor Greene,rep,GA,Republican,RepMTG
+491,Kaiali’i Kahele,rep,HI,Democrat,RepKahele
+492,Ashley Hinson,rep,IA,Republican,RepAshleyHinson
+493,Mariannette Miller-Meeks,rep,IA,Republican,RepMMM
+494,Randy Feenstra,rep,IA,Republican,RepFeenstra
+495,Marie Newman,rep,IL,Democrat,RepMarieNewman
+496,Mary E. Miller,rep,IL,Republican,RepMaryMiller
+497,Frank J. Mrvan,rep,IN,Democrat,RepMrvan
+498,Victoria Spartz,rep,IN,Republican,RepSpartz
+499,Tracey Mann,rep,KS,Republican,RepMann
+500,Jake LaTurner,rep,KS,Republican,RepLaTurner
+501,Jake Auchincloss,rep,MA,Democrat,RepAuchincloss
+502,Peter Meijer,rep,MI,Republican,RepMeijer
+503,Lisa C. McClain,rep,MI,Republican,RepLisaMcClain
+504,Michelle Fischbach,rep,MN,Republican,RepFischbach
+505,Cori Bush,rep,MO,Democrat,RepCori
+506,Matthew M. Rosendale,rep,MT,Republican,RepRosendale
+507,Deborah K. Ross,rep,NC,Democrat,RepDeborahRoss
+508,Kathy E. Manning,rep,NC,Democrat,RepKManning
+509,Madison Cawthorn,rep,NC,Republican,RepCawthorn
+510,Yvette Herrell,rep,NM,Republican,RepHerrell
+511,Teresa Leger Fernandez,rep,NM,Democrat,RepTeresaLF
+512,Andrew R. Garbarino,rep,NY,Republican,RepGarbarino
+513,Nicole Malliotakis,rep,NY,Republican,RepMalliotakis
+514,Ritchie Torres,rep,NY,Democrat,RepRitchie
+515,Jamaal Bowman,rep,NY,Democrat,RepBowman
+516,Mondaire Jones,rep,NY,Democrat,RepMondaire
+517,Stephanie I. Bice,rep,OK,Republican,RepBice
+518,Cliff Bentz,rep,OR,Republican,RepBentz
+519,Nancy Mace,rep,SC,Republican,RepNancyMace
+520,Diana Harshbarger,rep,TN,Republican,RepHarshbarger
+521,Pat Fallon,rep,TX,Republican,RepPatFallon
+522,August Pfluger,rep,TX,Republican,RepPfluger
+523,Ronny Jackson,rep,TX,Republican,RepRonnyJackson
+524,Troy E. Nehls,rep,TX,Republican,RepTroyNehls
+525,Tony Gonzales,rep,TX,Republican,RepTonyGonzales
+526,Beth Van Duyne,rep,TX,Republican,RepBethVanDuyne
+527,Blake D. Moore,rep,UT,Republican,RepBlakeMoore
+528,Burgess Owens,rep,UT,Republican,RepBurgessOwens
+529,Bob Good,rep,VA,Republican,RepBobGood
+530,Marilyn Strickland,rep,WA,Democrat,RepStricklandWA
+531,Scott Fitzgerald,rep,WI,Republican,RepFitzgerald
+532,Alex Padilla,sen,CA,Democrat,SenAlexPadilla
+533,Jon Ossoff,sen,GA,Democrat,SenOssoff
+534,Raphael G. Warnock,sen,GA,Democrat,SenatorWarnock
+535,Claudia Tenney,rep,NY,Republican,RepTenney
