@@ -7,8 +7,6 @@ public class Politician {
     public String party;
     public String twitter;
 
-    public Politician(){ }
-
     public Politician(String name, String type, String state, String party, String twitter) {
         this.name = name;
         this.type = type;

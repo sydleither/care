@@ -13,7 +13,7 @@ import java.util.List;
 
 public class MyItemRecyclerViewAdapter extends RecyclerView.Adapter<MyItemRecyclerViewAdapter.ViewHolder> {
     public interface AdapterDelegate {
-        void didSelectRow(int index);
+        void didSelectRow(View view, int index);
     }
 
     public AdapterDelegate delegate;
@@ -58,7 +58,7 @@ public class MyItemRecyclerViewAdapter extends RecyclerView.Adapter<MyItemRecycl
                 @Override
                 public void onClick(View view) {
                     int index = getLayoutPosition();
-                    delegate.didSelectRow(index);
+                    delegate.didSelectRow(view, index);
                 }
             });
         }

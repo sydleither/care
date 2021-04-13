@@ -8,6 +8,12 @@ import androidx.navigation.Navigation;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+
+import com.care.model.Politician;
+import com.care.model.PoliticianListModel;
+
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -61,6 +67,18 @@ public class PoliticanFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View fragView = inflater.inflate(R.layout.fragment_politican, container, false);
+
+        List<Politician> politicianList = PoliticianListModel.getInstance().getPoliticianList();
+        Politician politician = politicianList.get(getArguments().getInt("index"));
+
+        TextView textViewName = fragView.findViewById(R.id.textViewPoliticianName);
+        textViewName.setText(politician.name);
+        TextView textViewType = fragView.findViewById(R.id.textViewPoliticianType);
+        textViewType.setText(politician.type);
+        TextView textViewState = fragView.findViewById(R.id.textViewPoliticianState);
+        textViewState.setText(politician.state);
+        TextView textViewParty = fragView.findViewById(R.id.textViewPoliticianParty);
+        textViewParty.setText(politician.party);
 
         fragView.findViewById(R.id.buttonBack).setOnClickListener(new View.OnClickListener() {
             @Override

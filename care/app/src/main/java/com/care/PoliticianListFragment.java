@@ -32,7 +32,7 @@ public class PoliticianListFragment extends Fragment implements MyItemRecyclerVi
     // TODO: Customize parameters
     private int mColumnCount = 1;
 
-    PoliticianListModel politicianListModel = new PoliticianListModel();
+    PoliticianListModel politicianListModel = PoliticianListModel.getInstance();
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
@@ -66,7 +66,8 @@ public class PoliticianListFragment extends Fragment implements MyItemRecyclerVi
         View fragView = inflater.inflate(R.layout.fragment_politican_list_list, container, false);
         RecyclerView listView = fragView.findViewById(R.id.list);
 
-        // Set the adapter
+        PoliticianListFragment fragment = this;
+
         if (listView instanceof RecyclerView) {
             Context context = listView.getContext();
             RecyclerView recyclerView = listView;
@@ -79,15 +80,17 @@ public class PoliticianListFragment extends Fragment implements MyItemRecyclerVi
             adapter.delegate = this;
             recyclerView.setAdapter(adapter);
 
-            this.politicianListModel.updatedList(new PoliticianListModel.UpdateListCompletionHandler() {
-                @Override
-                public void didComplete() {
-                    MyItemRecyclerViewAdapter adapter = new MyItemRecyclerViewAdapter(politicianListModel.getPoliticianList());
-                    recyclerView.setAdapter(adapter);
-                    adapter.notifyDataSetChanged();
-                }
-            });
-
+            if(getArguments() == null) {
+                this.politicianListModel.updatedList(new PoliticianListModel.UpdateListCompletionHandler() {
+                    @Override
+                    public void didComplete() {
+                        MyItemRecyclerViewAdapter adapter = new MyItemRecyclerViewAdapter(politicianListModel.getPoliticianList());
+                        adapter.delegate = fragment;
+                        recyclerView.setAdapter(adapter);
+                        adapter.notifyDataSetChanged();
+                    }
+                });
+            }
         }
 
         if(getArguments() != null) {
@@ -105,6 +108,22 @@ public class PoliticianListFragment extends Fragment implements MyItemRecyclerVi
             String party = getArguments().getString("party");
             if (party.length() > 0)
                 textViewParty.setText(party);
+
+            this.politicianListModel.updatedList(new PoliticianListModel.UpdateListCompletionHandler() {
+                @Override
+                public void didComplete() {
+                    List<Politician> politicians = new ArrayList<>();
+                    for (Politician politician : politicianListModel.getPoliticianList()) {
+                        if ((state.length() == 0 || politician.state.equals(state)) && (type.length() == 0 || politician.type.equals(type)) && (party.length() == 0 || politician.party.equals(party)))
+                            politicians.add(politician);
+                    }
+
+                    MyItemRecyclerViewAdapter adapter = new MyItemRecyclerViewAdapter(politicians);
+                    adapter.delegate = fragment;
+                    listView.setAdapter(adapter);
+                    adapter.notifyDataSetChanged();
+                }
+            });
         }
 
         fragView.findViewById(R.id.buttonSettings).setOnClickListener(new View.OnClickListener() {
@@ -124,7 +143,13 @@ public class PoliticianListFragment extends Fragment implements MyItemRecyclerVi
         return fragView;
     }
 
-    public void didSelectRow(int index) {
-        //TODO send user to politician screen
+    public void didSelectRow(View view, int index) {
+        Bundle bundle = new Bundle();
+        bundle.putInt("index",index);
+        Navigation.findNavController(view).navigate(R.id.action_politicanListFragment_to_politicanFragment, bundle);
+    }
+
+    public List<Politician> getList(){
+        return politicianListModel.getPoliticianList();
     }
 }
