@@ -82,7 +82,6 @@ public class PoliticianListFragment extends Fragment implements MyItemRecyclerVi
             this.politicianListModel.updatedList(new PoliticianListModel.UpdateListCompletionHandler() {
                 @Override
                 public void didComplete() {
-                    List<Politician> politicianList = politicianListModel.getPoliticianList();
                     MyItemRecyclerViewAdapter adapter = new MyItemRecyclerViewAdapter(politicianListModel.getPoliticianList());
                     recyclerView.setAdapter(adapter);
                     adapter.notifyDataSetChanged();

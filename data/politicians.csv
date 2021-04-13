@@ -46,7 +46,7 @@
 46,G. K. Butterfield,rep,NC,Democrat,GKButterfield
 47,Ken Calvert,rep,CA,Republican,KenCalvert
 48,Shelley Moore Capito,sen,WV,Republican,SenCapito
-49,André Carson,rep,IN,Democrat,RepAndreCarson
+49,Andre Carson,rep,IN,Democrat,RepAndreCarson
 50,John R. Carter,rep,TX,Republican,JudgeCarter
 51,Bill Cassidy,sen,LA,Republican,SenBillCassidy
 52,Kathy Castor,rep,FL,Democrat,USRepKCastor
@@ -88,7 +88,7 @@
 88,Sam Graves,rep,MO,Republican,RepSamGraves
 89,Al Green,rep,TX,Democrat,RepAlGreen
 90,H. Morgan Griffith,rep,VA,Republican,RepMGriffith
-91,Raúl M. Grijalva,rep,AZ,Democrat,RepraulGrijalva
+91,Raul M. Grijalva,rep,AZ,Democrat,RepraulGrijalva
 92,Brett Guthrie,rep,KY,Republican,RepGuthrie
 93,Andy Harris,rep,MD,Republican,RepAndyHarrisMD
 94,Vicky Hartzler,rep,MO,Republican,RepHartzler
@@ -124,7 +124,7 @@
 124,Billy Long,rep,MO,Republican,USRepLong
 125,Frank D. Lucas,rep,OK,Republican,RepFrankLucas
 126,Blaine Luetkemeyer,rep,MO,Republican,RepBlaine
-127,Ben Ray Luján,sen,NM,Democrat,SenatorLujan
+127,Ben Ray Lujan,sen,NM,Democrat,SenatorLujan
 128,Stephen F. Lynch,rep,MA,Democrat,RepStephenLynch
 129,Carolyn B. Maloney,rep,NY,Democrat,RepMaloney
 130,Edward J. Markey,sen,MA,Democrat,SenMarkey
@@ -191,7 +191,7 @@
 191,Christopher H. Smith,rep,NJ,Republican,RepChrisSmith
 192,Jackie Speier,rep,CA,Democrat,RepSpeier
 193,Steve Stivers,rep,OH,Republican,RepSteveStivers
-194,Linda T. Sánchez,rep,CA,Democrat,RepLindaSanchez
+194,Linda T. Sanchez,rep,CA,Democrat,RepLindaSanchez
 195,Bennie G. Thompson,rep,MS,Democrat,BennieGThompson
 196,Mike Thompson,rep,CA,Democrat,RepThompson
 197,Glenn Thompson,rep,PA,Republican,CongressmanGT
@@ -201,7 +201,7 @@
 201,Michael R. Turner,rep,OH,Republican,RepMikeTurner
 202,Fred Upton,rep,MI,Republican,RepFredUpton
 203,Chris Van Hollen,sen,MD,Democrat,ChrisVanHollen
-204,Nydia M. Velázquez,rep,NY,Democrat,NydiaVelazquez
+204,Nydia M. Velazquez,rep,NY,Democrat,NydiaVelazquez
 205,Tim Walberg,rep,MI,Republican,RepWalberg
 206,Debbie Wasserman Schultz,rep,FL,Democrat,RepDWStweets
 207,Maxine Waters,rep,CA,Democrat,RepMaxineWaters
@@ -230,7 +230,7 @@
 230,Ami Bera,rep,CA,Democrat,RepBera
 231,Eric Swalwell,rep,CA,Democrat,RepSwalwell
 232,Julia Brownley,rep,CA,Democrat,RepBrownley
-233,Tony Cárdenas,rep,CA,Democrat,RepCardenas
+233,Tony Cardenas,rep,CA,Democrat,RepCardenas
 234,Raul Ruiz,rep,CA,Democrat,RepRaulRuizMD
 235,Mark Takano,rep,CA,Democrat,RepMarkTakano
 236,Alan S. Lowenthal,rep,CA,Democrat,RepLowenthal
@@ -268,7 +268,7 @@
 268,Marc A. Veasey,rep,TX,Democrat,RepVeasey
 269,Filemon Vela,rep,TX,Democrat,RepFilemonVela
 270,Chris Stewart,rep,UT,Republican,RepChrisStewart
-271,Tim Kaine,sen,VA,Democrat,N/A
+271,Tim Kaine,sen,VA,Democrat,NA
 272,Derek Kilmer,rep,WA,Democrat,RepDerekKilmer
 273,Mark Pocan,rep,WI,Democrat,RepMarkPocan
 274,Robin L. Kelly,rep,IL,Democrat,RepRobinKelly
@@ -325,12 +325,12 @@
 325,Margaret Wood Hassan,sen,NH,Democrat,Senatorhassan
 326,Catherine Cortez Masto,sen,NV,Democrat,sencortezmasto
 327,Bradley Scott Schneider,rep,IL,Democrat,repschneider
-328,Tom O’Halleran,rep,AZ,Democrat,repohalleran
+328,Tom O'Halleran,rep,AZ,Democrat,repohalleran
 329,Andy Biggs,rep,AZ,Republican,RepAndyBiggsAZ
 330,Ro Khanna,rep,CA,Democrat,RepRoKhanna
 331,Jimmy Panetta,rep,CA,Democrat,RepJimmyPanetta
 332,Salud O. Carbajal,rep,CA,Democrat,RepCarbajal
-333,Nanette Diaz Barragán,rep,CA,Democrat,RepBarragan
+333,Nanette Diaz Barragan,rep,CA,Democrat,RepBarragan
 334,J. Luis Correa,rep,CA,Democrat,reploucorrea
 335,Lisa Blunt Rochester,rep,DE,Democrat,RepLBR
 336,Matt Gaetz,rep,FL,Republican,RepMattGaetz
@@ -360,7 +360,7 @@
 360,Adriano Espaillat,rep,NY,Democrat,RepEspaillat
 361,Brian K. Fitzpatrick,rep,PA,Republican,repbrianfitz
 362,Lloyd Smucker,rep,PA,Republican,RepSmucker
-363,Jenniffer González-Colón,rep,PR,Republican,repjenniffer
+363,Jenniffer Gonzalez-Colon,rep,PR,Republican,repjenniffer
 364,David Kustoff,rep,TN,Republican,repdavidkustoff
 365,Vicente Gonzalez,rep,TX,Democrat,RepGonzalez
 366,Jodey C. Arrington,rep,TX,Republican,RepArrington
@@ -398,7 +398,7 @@
 398,Michael F. Q. San Nicolas,rep,GU,Democrat,GuamCongressman
 399,Cynthia Axne,rep,IA,Democrat,RepCindyAxne
 400,Russ Fulcher,rep,ID,Republican,RepRussFulcher
-401,Jesús G. Chuy García,rep,IL,Democrat,RepChuyGarcia
+401,Jesus G. Chuy Garcia,rep,IL,Democrat,RepChuyGarcia
 402,Sean Casten,rep,IL,Democrat,RepCasten
 403,Lauren Underwood,rep,IL,Democrat,RepUnderwood
 404,James R. Baird,rep,IN,Republican,RepJimBaird
@@ -488,7 +488,7 @@
 488,Carolyn Bourdeaux,rep,GA,Democrat,RepBourdeaux
 489,Andrew S. Clyde,rep,GA,Republican,
 490,Marjorie Taylor Greene,rep,GA,Republican,RepMTG
-491,Kaiali’i Kahele,rep,HI,Democrat,RepKahele
+491,Kaiali'i Kahele,rep,HI,Democrat,RepKahele
 492,Ashley Hinson,rep,IA,Republican,RepAshleyHinson
 493,Mariannette Miller-Meeks,rep,IA,Republican,RepMMM
 494,Randy Feenstra,rep,IA,Republican,RepFeenstra
