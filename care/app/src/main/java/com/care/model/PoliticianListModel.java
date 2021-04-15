@@ -44,14 +44,13 @@ public class PoliticianListModel {
                 handler.didComplete();
             }
         });
-
-    }
-
-    public int getCount() {
-        return politicianList.size();
     }
 
     public List<Politician> getPoliticianList() {
         return politicianList;
+    }
+
+    public void setPoliticianList(List<Politician> politicianList) {
+        this.politicianList = politicianList;
     }
 }

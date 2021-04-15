@@ -68,29 +68,27 @@ public class PoliticianListFragment extends Fragment implements MyItemRecyclerVi
 
         PoliticianListFragment fragment = this;
 
-        if (listView instanceof RecyclerView) {
-            Context context = listView.getContext();
-            RecyclerView recyclerView = listView;
-            if (mColumnCount <= 1) {
-                recyclerView.setLayoutManager(new LinearLayoutManager(context));
-            } else {
-                recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
-            }
-            MyItemRecyclerViewAdapter adapter = new MyItemRecyclerViewAdapter(politicianListModel.getPoliticianList());
-            adapter.delegate = this;
-            recyclerView.setAdapter(adapter);
+        Context context = listView.getContext();
+        //RecyclerView recyclerView = listView;
+        if (mColumnCount <= 1) {
+            listView.setLayoutManager(new LinearLayoutManager(context));
+        } else {
+            listView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
+        }
+        MyItemRecyclerViewAdapter adapter = new MyItemRecyclerViewAdapter(politicianListModel.getPoliticianList());
+        adapter.delegate = this;
+        listView.setAdapter(adapter);
 
-            if(getArguments() == null) {
-                this.politicianListModel.updatedList(new PoliticianListModel.UpdateListCompletionHandler() {
-                    @Override
-                    public void didComplete() {
-                        MyItemRecyclerViewAdapter adapter = new MyItemRecyclerViewAdapter(politicianListModel.getPoliticianList());
-                        adapter.delegate = fragment;
-                        recyclerView.setAdapter(adapter);
-                        adapter.notifyDataSetChanged();
-                    }
-                });
-            }
+        if(getArguments() == null) {
+            this.politicianListModel.updatedList(new PoliticianListModel.UpdateListCompletionHandler() {
+                @Override
+                public void didComplete() {
+                    MyItemRecyclerViewAdapter adapter = new MyItemRecyclerViewAdapter(politicianListModel.getPoliticianList());
+                    adapter.delegate = fragment;
+                    listView.setAdapter(adapter);
+                    adapter.notifyDataSetChanged();
+                }
+            });
         }
 
         if(getArguments() != null) {
@@ -109,14 +107,15 @@ public class PoliticianListFragment extends Fragment implements MyItemRecyclerVi
             if (party.length() > 0)
                 textViewParty.setText(party);
 
+            List<Politician> politicians = new ArrayList<>();
             this.politicianListModel.updatedList(new PoliticianListModel.UpdateListCompletionHandler() {
                 @Override
                 public void didComplete() {
-                    List<Politician> politicians = new ArrayList<>();
                     for (Politician politician : politicianListModel.getPoliticianList()) {
                         if ((state.length() == 0 || politician.state.equals(state)) && (type.length() == 0 || politician.type.equals(type)) && (party.length() == 0 || politician.party.equals(party)))
                             politicians.add(politician);
                     }
+                    fragment.politicianListModel.setPoliticianList(politicians);
 
                     MyItemRecyclerViewAdapter adapter = new MyItemRecyclerViewAdapter(politicians);
                     adapter.delegate = fragment;

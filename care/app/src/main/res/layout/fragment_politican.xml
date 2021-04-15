@@ -15,9 +15,9 @@
             android:id="@+id/textViewPoliticianName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="124dp"
+            android:layout_marginStart="188dp"
             android:layout_marginTop="16dp"
-            android:text="Alexandria Ocasio-Cortez"
+            android:text="temp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,9 +25,8 @@
             android:id="@+id/textViewPoliticianType"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="8dp"
-            android:text="Representative"
+            android:layout_marginTop="12dp"
+            android:text="temp"
             app:layout_constraintStart_toStartOf="@+id/textViewPoliticianName"
             app:layout_constraintTop_toBottomOf="@+id/textViewPoliticianName" />
 
@@ -35,9 +34,8 @@
             android:id="@+id/textViewPoliticianState"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="8dp"
-            android:text="New York"
+            android:layout_marginTop="16dp"
+            android:text="temp"
             app:layout_constraintStart_toStartOf="@+id/textViewPoliticianType"
             app:layout_constraintTop_toBottomOf="@+id/textViewPoliticianType" />
 
@@ -45,8 +43,8 @@
             android:id="@+id/textViewPoliticianParty"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Democrat"
+            android:layout_marginTop="12dp"
+            android:text="temp"
             app:layout_constraintStart_toStartOf="@+id/textViewPoliticianState"
             app:layout_constraintTop_toBottomOf="@+id/textViewPoliticianState" />
 
@@ -55,7 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="132dp"
+            android:layout_marginTop="148dp"
             android:text="Analysis"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -92,8 +90,8 @@
             android:id="@+id/textView14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="256dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="272dp"
             android:text="Recent Tweets"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
