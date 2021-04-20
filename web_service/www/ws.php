@@ -2,6 +2,7 @@
 
 require_once(__DIR__."/../controllers/ControllerRequest.php");
 require_once(__DIR__."/../controllers/PoliticiansController.php");
+require_once(__DIR__."/../controllers/TweetsController.php");
 
 $method = strtolower($_SERVER["REQUEST_METHOD"]);
 
@@ -13,12 +14,9 @@ if(method_exists($controller,$method)) {
   header("Content-Type: application/json");
   $data = json_decode(file_get_contents("php://input"));
   $request = new ControllerRequest();
-  if($method == "get" || $method == "put" || $method == "delete" || $method == "patch") {
+  if($method == "get") {
     $request->id = $path[2];
     $request->param = $path[3];
-  }
-  if($method == "post" || $method == "put" || $method == "patch") {
-    $request->data = $data;
   }
   $response = call_user_func(array($controller,$method), $request);
   echo json_encode($response);
