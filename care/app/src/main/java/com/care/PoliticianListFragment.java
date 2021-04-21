@@ -69,7 +69,6 @@ public class PoliticianListFragment extends Fragment implements MyItemRecyclerVi
         PoliticianListFragment fragment = this;
 
         Context context = listView.getContext();
-        //RecyclerView recyclerView = listView;
         if (mColumnCount <= 1) {
             listView.setLayoutManager(new LinearLayoutManager(context));
         } else {

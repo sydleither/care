@@ -12,7 +12,10 @@ import android.widget.TextView;
 
 import com.care.model.Politician;
 import com.care.model.PoliticianListModel;
+import com.care.model.Tweet;
+import com.care.model.TweetListModel;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -21,6 +24,8 @@ import java.util.List;
  * create an instance of this fragment.
  */
 public class PoliticanFragment extends Fragment {
+
+    TweetListModel tweetListModel = TweetListModel.getInstance();
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -68,6 +73,8 @@ public class PoliticanFragment extends Fragment {
         // Inflate the layout for this fragment
         View fragView = inflater.inflate(R.layout.fragment_politican, container, false);
 
+        PoliticanFragment fragment = this;
+
         List<Politician> politicianList = PoliticianListModel.getInstance().getPoliticianList();
         Politician politician = politicianList.get(getArguments().getInt("index"));
 
@@ -79,6 +86,21 @@ public class PoliticanFragment extends Fragment {
         textViewState.setText(politician.state);
         TextView textViewParty = fragView.findViewById(R.id.textViewPoliticianParty);
         textViewParty.setText(politician.party);
+
+        List<Tweet> tweets = new ArrayList<>();
+        this.tweetListModel.updatedList(new TweetListModel.UpdateListCompletionHandler() {
+            @Override
+            public void didComplete() {
+                for (Tweet tweet : tweetListModel.getTweetList()) {
+                    tweets.add(tweet);
+                }
+                fragment.tweetListModel.setTweetList(tweets);
+                TextView textViewTweet1Date = fragView.findViewById(R.id.textViewTweet1Date);
+                textViewTweet1Date.setText(tweets.get(0).date);
+                TextView textViewTweet1Text = fragView.findViewById(R.id.textViewTweet1Text);
+                textViewTweet1Text.setText(tweets.get(0).text);
+            }
+        }, politician.twitter);
 
         fragView.findViewById(R.id.buttonBack).setOnClickListener(new View.OnClickListener() {
             @Override

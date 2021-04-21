@@ -14,7 +14,7 @@ public class ServiceClient {
     private static ServiceClient serviceClient;
     private static Context context;
     private RequestQueue requestQueue;
-    private String serviceEndpoint = "https://mopsdev.bw.edu/~sleither17/care/www/ws.php/politicians";
+    private String serviceEndpoint = "https://mopsdev.bw.edu/~sleither17/care/www/ws.php/";
 
     private ServiceClient(Context context) {
         ServiceClient.context = context;
@@ -43,12 +43,12 @@ public class ServiceClient {
     }
 
     public void get(JSONObject jsonObject, Response.Listener<JSONObject> listener, Response.ErrorListener errorListener) {
-        JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, this.serviceEndpoint, jsonObject, listener, errorListener);
+        JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, this.serviceEndpoint+"politicians", jsonObject, listener, errorListener);
         this.addRequestToQueue(request);
     }
 
-    public void post(JSONObject jsonObject, Response.Listener<JSONObject> listener, Response.ErrorListener errorListener) {
-        JsonObjectRequest request = new JsonObjectRequest(Request.Method.POST, this.serviceEndpoint, jsonObject, listener, errorListener);
+    public void get_tweets(String twitter, JSONObject jsonObject, Response.Listener<JSONObject> listener, Response.ErrorListener errorListener) {
+        JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, this.serviceEndpoint+"tweets/"+twitter, jsonObject, listener, errorListener);
         this.addRequestToQueue(request);
     }
 }

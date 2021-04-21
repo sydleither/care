@@ -10,24 +10,23 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
-import java.util.List;
 
-public class PoliticianWebServiceModel {
-    public interface GetPoliticiansResponse {
-        void response(ArrayList<PoliticianWebService> politicians);
+public class TweetWebServiceModel {
+    public interface GetTweetsResponse {
+        void response(ArrayList<TweetWebService> tweets);
         void error();
     }
 
-    public void getPoliticians(GetPoliticiansResponse handler) {
+    public void getTweets(TweetWebServiceModel.GetTweetsResponse handler, String twitter) {
         ServiceClient serviceClient = ServiceClient.getSharedInstance(null);
 
-        serviceClient.get(null,
+        serviceClient.get_tweets(twitter, null,
                 new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {
-                        ArrayList<PoliticianWebService> politicians = new ArrayList<>();
+                        ArrayList<TweetWebService> tweets = new ArrayList<>();
                         JSONArray data = null;
-                        JSONObject politicianJson = null;
+                        JSONObject tweetJson = null;
                         try {
                             data = (JSONArray) response.get("data");
                         } catch (JSONException e) {
@@ -35,15 +34,15 @@ public class PoliticianWebServiceModel {
                         }
                         for(int i = 0; i < data.length(); i++) {
                             try {
-                                politicianJson = (JSONObject) data.get(i);
+                                tweetJson = (JSONObject) data.get(i);
                             } catch (JSONException e) {
                                 //TODO
                             }
                             Gson gson = new Gson();
-                            PoliticianWebService politician = gson.fromJson(politicianJson.toString(), PoliticianWebService.class);
-                            politicians.add(politician);
+                            TweetWebService tweet = gson.fromJson(tweetJson.toString(), TweetWebService.class);
+                            tweets.add(tweet);
                         }
-                        handler.response(politicians);
+                        handler.response(tweets);
                     }
                 },
                 new Response.ErrorListener() {

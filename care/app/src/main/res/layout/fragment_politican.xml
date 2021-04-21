@@ -92,7 +92,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginTop="272dp"
-            android:text="Recent Tweets"
+            android:text="Recent Tweets (currently only updated monthly)"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -106,5 +106,25 @@
             app:backgroundTint="@color/button"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewTweet1Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:text="temp"
+            app:layout_constraintStart_toStartOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/textViewTweet1Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:text="temp"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewTweet1Date"
+            app:layout_constraintStart_toStartOf="@+id/textViewTweet1Date" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
