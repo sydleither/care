@@ -9,6 +9,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.care.model.Tweet;
+import com.care.model.TweetListModel;
+import com.google.gson.Gson;
+
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.util.List;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link HelpFragment#newInstance} factory method to
@@ -69,6 +77,57 @@ public class HelpFragment extends Fragment {
             }
         });
 
+        fragView.findViewById(R.id.buttonUpdate).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Thread thread = new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        try  {
+                            TweetListModel tweetListModel = TweetListModel.getInstance();
+                            List<Tweet> tweets = tweetListModel.getTweetList();
+                            updateTweets(tweets.get(tweets.size()-1).date);
+                        } catch (Exception e) { }
+                    }
+                });
+                thread.start();
+            }
+        });
+
         return fragView;
+    }
+
+    private void updateTweets(String date) {
+        int cur_year = Integer.parseInt(date.substring(0,4));
+        int cur_month = Integer.parseInt(date.substring(5,7));
+        int cur_day = Integer.parseInt(date.substring(8,10));
+
+        for (int year = cur_year; year < 2100; year++) {
+            for (int month = cur_month; month <= 12; month++) {
+                for (int day = cur_day+1; day <= 31; day++){
+                    String month_f = String.format("%02d", month);
+                    String day_f = String.format("%02d", day);
+                    try {
+                        URL url = new URL(String.format("https://alexlitel.github.io/congresstweets/data/%s-%s-%s.json", Integer.toString(year), month_f, day_f));
+                        InputStreamReader reader = new InputStreamReader(url.openStream());
+                        TweetJson[] idk = new Gson().fromJson(reader, TweetJson[].class);
+                        String temp = idk[0].screen_name;
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                        break;
+                    }
+                }
+            }
+        }
+    }
+
+    private class TweetJson {
+        String id;
+        String screen_name;
+        String user_id;
+        String time;
+        String link;
+        String text;
+        String source;
     }
 }

@@ -41,5 +41,16 @@
             app:backgroundTint="@color/button"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/buttonUpdate"
+            android:layout_width="185dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="480dp"
+            android:text="Update Tweets"
+            app:backgroundTint="@color/button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

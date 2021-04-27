@@ -14,7 +14,12 @@ import com.care.model.Politician;
 import com.care.model.PoliticianListModel;
 import com.care.model.Tweet;
 import com.care.model.TweetListModel;
+import com.google.gson.Gson;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -87,18 +92,14 @@ public class PoliticanFragment extends Fragment {
         TextView textViewParty = fragView.findViewById(R.id.textViewPoliticianParty);
         textViewParty.setText(politician.party);
 
-        List<Tweet> tweets = new ArrayList<>();
         this.tweetListModel.updatedList(new TweetListModel.UpdateListCompletionHandler() {
             @Override
             public void didComplete() {
-                for (Tweet tweet : tweetListModel.getTweetList()) {
-                    tweets.add(tweet);
-                }
-                fragment.tweetListModel.setTweetList(tweets);
+                List<Tweet> tweets = tweetListModel.getTweetList();
                 TextView textViewTweet1Date = fragView.findViewById(R.id.textViewTweet1Date);
-                textViewTweet1Date.setText(tweets.get(0).date);
+                textViewTweet1Date.setText(tweets.get(tweets.size()-1).date);
                 TextView textViewTweet1Text = fragView.findViewById(R.id.textViewTweet1Text);
-                textViewTweet1Text.setText(tweets.get(0).text);
+                textViewTweet1Text.setText(tweets.get(tweets.size()-1).text);
             }
         }, politician.twitter);
 
