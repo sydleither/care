@@ -1,11 +1,16 @@
 package com.care.model;
 
+import android.widget.TextView;
+
+import com.care.R;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class TweetListModel {
     private static TweetListModel single_instance = null;
     private List<Tweet> tweetList = new ArrayList<>();
+    private String newestDate = "";
 
     public interface UpdateListCompletionHandler {
         void didComplete();
@@ -42,11 +47,32 @@ public class TweetListModel {
         }, twitter);
     }
 
+    public void newestDate(TweetListModel.UpdateListCompletionHandler handler) {
+        TweetWebServiceModel model = new TweetWebServiceModel();
+        model.getNewestDate(new TweetWebServiceModel.GetTweetsResponseDate() {
+            @Override
+            public void response(String date) {
+                newestDate = date;
+                handler.didComplete();
+            }
+
+            @Override
+            public void error() {
+                newestDate = "ERROR";
+                handler.didComplete();
+            }
+        });
+    }
+
     public List<Tweet> getTweetList() {
         return tweetList;
     }
 
     public void setTweetList(List<Tweet> tweetList) {
         this.tweetList = tweetList;
+    }
+
+    public String getNewestDate() {
+        return newestDate;
     }
 }

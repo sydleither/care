@@ -8,14 +8,21 @@ import androidx.navigation.Navigation;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
+import com.care.model.Politician;
+import com.care.model.PoliticianListModel;
 import com.care.model.Tweet;
 import com.care.model.TweetListModel;
+import com.care.model.TweetWebService;
+import com.care.model.TweetWebServiceModel;
 import com.google.gson.Gson;
 
 import java.io.InputStreamReader;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -23,6 +30,9 @@ import java.util.List;
  * create an instance of this fragment.
  */
 public class HelpFragment extends Fragment {
+
+    TweetListModel tweetListModel = TweetListModel.getInstance();
+    PoliticianListModel politicianListModel = PoliticianListModel.getInstance();
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -80,24 +90,34 @@ public class HelpFragment extends Fragment {
         fragView.findViewById(R.id.buttonUpdate).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Thread thread = new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        try  {
-                            TweetListModel tweetListModel = TweetListModel.getInstance();
-                            List<Tweet> tweets = tweetListModel.getTweetList();
-                            updateTweets(tweets.get(tweets.size()-1).date);
-                        } catch (Exception e) { }
-                    }
-                });
-                thread.start();
+                try  {
+                    tweetListModel.newestDate(new TweetListModel.UpdateListCompletionHandler() {
+                        @Override
+                        public void didComplete() {
+                            String newestDate = TweetListModel.getInstance().getNewestDate();
+                            Thread thread = new Thread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    if(!newestDate.equals("ERROR"))
+                                        updateTweets(newestDate);
+                                    else {
+                                        int i =0; //TODO
+                                    }
+                                }
+                            });
+                            thread.start();
+                        }
+                    });
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
         });
-
         return fragView;
     }
 
     private void updateTweets(String date) {
+        TweetWebServiceModel model = new TweetWebServiceModel();
         int cur_year = Integer.parseInt(date.substring(0,4));
         int cur_month = Integer.parseInt(date.substring(5,7));
         int cur_day = Integer.parseInt(date.substring(8,10));
@@ -110,10 +130,24 @@ public class HelpFragment extends Fragment {
                     try {
                         URL url = new URL(String.format("https://alexlitel.github.io/congresstweets/data/%s-%s-%s.json", Integer.toString(year), month_f, day_f));
                         InputStreamReader reader = new InputStreamReader(url.openStream());
-                        TweetJson[] idk = new Gson().fromJson(reader, TweetJson[].class);
-                        String temp = idk[0].screen_name;
+                        TweetJson[] tweetJsonList = new Gson().fromJson(reader, TweetJson[].class);
+
+                        List<Tweet> tweets = new ArrayList<>();
+                        for(TweetJson tweetJson : tweetJsonList) {
+                            if(politicianListModel.getPoliticianTwitterList().contains(tweetJson.screen_name))
+                                tweets.add(new Tweet(tweetJson.screen_name, tweetJson.time.substring(0,10), tweetJson.link, tweetJson.text));
+                        }
+                        model.postTweets(tweets, new TweetWebServiceModel.GetTweetsResponsePost() {
+                            @Override
+                            public void response() {
+                                //TODO
+                            }
+                            @Override
+                            public void error() {
+                                //TODO
+                            }
+                        });
                     } catch (Exception e) {
-                        e.printStackTrace();
                         break;
                     }
                 }

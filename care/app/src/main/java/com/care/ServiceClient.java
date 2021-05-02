@@ -5,9 +5,11 @@ import android.content.Context;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
+import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 public class ServiceClient {
@@ -49,6 +51,16 @@ public class ServiceClient {
 
     public void get_tweets(String twitter, JSONObject jsonObject, Response.Listener<JSONObject> listener, Response.ErrorListener errorListener) {
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, this.serviceEndpoint+"tweets/"+twitter, jsonObject, listener, errorListener);
+        this.addRequestToQueue(request);
+    }
+
+    public void post(JSONArray jsonArray, Response.Listener<JSONArray> listener, Response.ErrorListener errorListener) {
+        JsonArrayRequest request = new JsonArrayRequest(Request.Method.POST, this.serviceEndpoint+"tweets", jsonArray, listener, errorListener); //TODO jsonobject listener
+        this.addRequestToQueue(request);
+    }
+
+    public void get_newest_date(JSONObject jsonObject, Response.Listener<JSONObject> listener, Response.ErrorListener errorListener) {
+        JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, this.serviceEndpoint+"tweets?query=newest_date", jsonObject, listener, errorListener);
         this.addRequestToQueue(request);
     }
 }

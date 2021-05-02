@@ -18,6 +18,9 @@ if(method_exists($controller,$method)) {
     $request->id = $path[2];
     $request->param = $path[3];
   }
+  if($method == "post") {
+    $request->data = $data;
+  }
   $response = call_user_func(array($controller,$method), $request);
   echo json_encode($response);
 }

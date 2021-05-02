@@ -22,35 +22,35 @@ public class PoliticianWebServiceModel {
         ServiceClient serviceClient = ServiceClient.getSharedInstance(null);
 
         serviceClient.get(null,
-                new Response.Listener<JSONObject>() {
-                    @Override
-                    public void onResponse(JSONObject response) {
-                        ArrayList<PoliticianWebService> politicians = new ArrayList<>();
-                        JSONArray data = null;
-                        JSONObject politicianJson = null;
+            new Response.Listener<JSONObject>() {
+                @Override
+                public void onResponse(JSONObject response) {
+                    ArrayList<PoliticianWebService> politicians = new ArrayList<>();
+                    JSONArray data = null;
+                    JSONObject politicianJson = null;
+                    try {
+                        data = (JSONArray) response.get("data");
+                    } catch (JSONException e) {
+                        //TODO
+                    }
+                    for(int i = 0; i < data.length(); i++) {
                         try {
-                            data = (JSONArray) response.get("data");
+                            politicianJson = (JSONObject) data.get(i);
                         } catch (JSONException e) {
                             //TODO
                         }
-                        for(int i = 0; i < data.length(); i++) {
-                            try {
-                                politicianJson = (JSONObject) data.get(i);
-                            } catch (JSONException e) {
-                                //TODO
-                            }
-                            Gson gson = new Gson();
-                            PoliticianWebService politician = gson.fromJson(politicianJson.toString(), PoliticianWebService.class);
-                            politicians.add(politician);
-                        }
-                        handler.response(politicians);
+                        Gson gson = new Gson();
+                        PoliticianWebService politician = gson.fromJson(politicianJson.toString(), PoliticianWebService.class);
+                        politicians.add(politician);
                     }
-                },
-                new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        handler.error();
-                    }
-                });
+                    handler.response(politicians);
+                }
+            },
+            new Response.ErrorListener() {
+                @Override
+                public void onErrorResponse(VolleyError error) {
+                    handler.error();
+                }
+            });
     }
 }

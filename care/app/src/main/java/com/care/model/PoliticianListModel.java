@@ -50,6 +50,14 @@ public class PoliticianListModel {
         return politicianList;
     }
 
+    public List<String> getPoliticianTwitterList() {
+        List<String> politicianTwitterList = new ArrayList<>();
+        for(Politician politician : politicianList) {
+            politicianTwitterList.add(politician.twitter);
+        }
+        return politicianTwitterList;
+    }
+
     public void setPoliticianList(List<Politician> politicianList) {
         this.politicianList = politicianList;
     }
