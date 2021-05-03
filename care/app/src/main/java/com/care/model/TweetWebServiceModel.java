@@ -40,14 +40,13 @@ public class TweetWebServiceModel {
                         try {
                             data = (JSONArray) response.get("data");
                         } catch (JSONException e) {
-                            //TODO
+                            tweets.add(new TweetWebService(0,"Error Getting Tweets","","",""));
+                            handler.response(tweets);
                         }
                         for(int i = 0; i < data.length(); i++) {
                             try {
                                 tweetJson = (JSONObject) data.get(i);
-                            } catch (JSONException e) {
-                                //TODO
-                            }
+                            } catch (JSONException e) { }
                             Gson gson = new Gson();
                             TweetWebService tweet = gson.fromJson(tweetJson.toString(), TweetWebService.class);
                             tweets.add(tweet);

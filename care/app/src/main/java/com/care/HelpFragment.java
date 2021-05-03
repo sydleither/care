@@ -5,9 +5,13 @@ import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
+import android.os.Handler;
+import android.os.Looper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.care.model.Politician;
@@ -90,6 +94,11 @@ public class HelpFragment extends Fragment {
         fragView.findViewById(R.id.buttonUpdate).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Button updateButton = view.findViewById(R.id.buttonUpdate);
+                updateButton.setEnabled(false);
+                TextView textViewStatus = fragView.findViewById(R.id.textViewStatus);
+                textViewStatus.setText("Loading...");
+
                 try  {
                     tweetListModel.newestDate(new TweetListModel.UpdateListCompletionHandler() {
                         @Override
@@ -98,10 +107,22 @@ public class HelpFragment extends Fragment {
                             Thread thread = new Thread(new Runnable() {
                                 @Override
                                 public void run() {
-                                    if(!newestDate.equals("ERROR"))
+                                    if(!newestDate.equals("ERROR")) {
                                         updateTweets(newestDate);
+                                        getActivity().runOnUiThread(new Runnable() {
+                                            @Override
+                                            public void run() {
+                                                textViewStatus.setText("Done");
+                                            }
+                                        });
+                                    }
                                     else {
-                                        int i =0; //TODO
+                                        getActivity().runOnUiThread(new Runnable() {
+                                            @Override
+                                            public void run() {
+                                                textViewStatus.setText("Error Fetching Latest Tweet Date");
+                                            }
+                                        });
                                     }
                                 }
                             });
@@ -109,10 +130,11 @@ public class HelpFragment extends Fragment {
                         }
                     });
                 } catch (Exception e) {
-                    e.printStackTrace();
+                    textViewStatus.setText("Error Updating Tweets");
                 }
             }
         });
+
         return fragView;
     }
 
@@ -122,9 +144,23 @@ public class HelpFragment extends Fragment {
         int cur_month = Integer.parseInt(date.substring(5,7));
         int cur_day = Integer.parseInt(date.substring(8,10));
 
-        for (int year = cur_year; year < 2100; year++) {
-            for (int month = cur_month; month <= 12; month++) {
-                for (int day = cur_day+1; day <= 31; day++){
+        if (cur_day == 31) {
+            cur_day = 1;
+            cur_month += 1;
+            if (cur_month == 13) {
+                cur_month = 1;
+                cur_year += 1;
+            }
+        }
+        else {
+            cur_day += 1;
+        }
+
+        boolean status = true;
+
+        for (int year = cur_year; year < 2100 && status; year++) {
+            for (int month = cur_month; month <= 12 && status; month++) {
+                for (int day = cur_day; day <= 31 && status; day++){
                     String month_f = String.format("%02d", month);
                     String day_f = String.format("%02d", day);
                     try {
@@ -132,23 +168,23 @@ public class HelpFragment extends Fragment {
                         InputStreamReader reader = new InputStreamReader(url.openStream());
                         TweetJson[] tweetJsonList = new Gson().fromJson(reader, TweetJson[].class);
 
-                        List<Tweet> tweets = new ArrayList<>();
-                        for(TweetJson tweetJson : tweetJsonList) {
-                            if(politicianListModel.getPoliticianTwitterList().contains(tweetJson.screen_name))
-                                tweets.add(new Tweet(tweetJson.screen_name, tweetJson.time.substring(0,10), tweetJson.link, tweetJson.text));
+                        if (tweetJsonList.length > 0) {
+                            List<Tweet> tweets = new ArrayList<>();
+                            for (TweetJson tweetJson : tweetJsonList) {
+                                if (politicianListModel.getPoliticianTwitterList().contains(tweetJson.screen_name))
+                                    tweets.add(new Tweet(tweetJson.screen_name, tweetJson.time.substring(0, 10), tweetJson.link, tweetJson.text));
+                            }
+                            model.postTweets(tweets, new TweetWebServiceModel.GetTweetsResponsePost() {
+                                @Override
+                                public void response() { }
+                                @Override
+                                public void error() { }
+                            });
+                        } else {
+                            status = false;
                         }
-                        model.postTweets(tweets, new TweetWebServiceModel.GetTweetsResponsePost() {
-                            @Override
-                            public void response() {
-                                //TODO
-                            }
-                            @Override
-                            public void error() {
-                                //TODO
-                            }
-                        });
                     } catch (Exception e) {
-                        break;
+                        status = false;
                     }
                 }
             }

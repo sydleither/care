@@ -55,7 +55,7 @@ public class ServiceClient {
     }
 
     public void post(JSONArray jsonArray, Response.Listener<JSONArray> listener, Response.ErrorListener errorListener) {
-        JsonArrayRequest request = new JsonArrayRequest(Request.Method.POST, this.serviceEndpoint+"tweets", jsonArray, listener, errorListener); //TODO jsonobject listener
+        JsonArrayRequest request = new JsonArrayRequest(Request.Method.POST, this.serviceEndpoint+"tweets", jsonArray, listener, errorListener);
         this.addRequestToQueue(request);
     }
 

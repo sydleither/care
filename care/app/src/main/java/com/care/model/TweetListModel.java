@@ -68,10 +68,6 @@ public class TweetListModel {
         return tweetList;
     }
 
-    public void setTweetList(List<Tweet> tweetList) {
-        this.tweetList = tweetList;
-    }
-
     public String getNewestDate() {
         return newestDate;
     }

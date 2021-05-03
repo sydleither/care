@@ -39,7 +39,7 @@ public class PoliticianListModel {
             @Override
             public void error() {
                 politicianList.clear();
-                Politician politician = new Politician("Error","","","","");
+                Politician politician = new Politician("Error Getting Politicians","","","","");
                 politicianList.add(politician);
                 handler.didComplete();
             }

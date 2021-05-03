@@ -31,14 +31,13 @@ public class PoliticianWebServiceModel {
                     try {
                         data = (JSONArray) response.get("data");
                     } catch (JSONException e) {
-                        //TODO
+                        politicians.add(new PoliticianWebService(0, "Error Getting Politicians", "", "", "", ""));
+                        handler.response(politicians);
                     }
                     for(int i = 0; i < data.length(); i++) {
                         try {
                             politicianJson = (JSONObject) data.get(i);
-                        } catch (JSONException e) {
-                            //TODO
-                        }
+                        } catch (JSONException e) { }
                         Gson gson = new Gson();
                         PoliticianWebService politician = gson.fromJson(politicianJson.toString(), PoliticianWebService.class);
                         politicians.add(politician);
