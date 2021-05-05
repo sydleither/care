@@ -85,6 +85,15 @@ public class SettingsFragment extends Fragment {
 
                 EditText fieldParty = fragView.findViewById(R.id.editTextParty);
                 String party = fieldParty.getText().toString();
+                if(party.equals("D")){
+                    party = "Democrat";
+                }
+                if(party.equals("R")){
+                    party = "Republican";
+                }
+                if(party.equals("I")){
+                    party = "Independent";
+                }
                 bundle.putString("party", party);
 
                 Navigation.findNavController(view).navigate(R.id.action_settingsFragment_to_politicanListFragment, bundle);

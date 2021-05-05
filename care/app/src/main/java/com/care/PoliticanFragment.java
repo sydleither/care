@@ -96,10 +96,16 @@ public class PoliticanFragment extends Fragment {
             @Override
             public void didComplete() {
                 List<Tweet> tweets = tweetListModel.getTweetList();
-                TextView textViewTweet1Date = fragView.findViewById(R.id.textViewTweet1Date);
-                textViewTweet1Date.setText(tweets.get(tweets.size()-1).date);
-                TextView textViewTweet1Text = fragView.findViewById(R.id.textViewTweet1Text);
-                textViewTweet1Text.setText(tweets.get(tweets.size()-1).text);
+                if(tweets.size() > 0) {
+                    TextView textViewTweet1Date = fragView.findViewById(R.id.textViewTweet1Date);
+                    textViewTweet1Date.setText(tweets.get(tweets.size() - 1).date);
+                    TextView textViewTweet1Text = fragView.findViewById(R.id.textViewTweet1Text);
+                    textViewTweet1Text.setText(tweets.get(tweets.size() - 1).text);
+                }
+                else{
+                    TextView textViewTweet1Text = fragView.findViewById(R.id.textViewTweet1Text);
+                    textViewTweet1Text.setText("No tweets found");
+                }
             }
         }, politician.twitter);
 
